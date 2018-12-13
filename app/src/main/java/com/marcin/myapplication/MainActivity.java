@@ -10,14 +10,14 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    BroadcastReceiver chargerConnectedReceiver = new BroadcastReceiver() {
+    private BroadcastReceiver chargerConnectedReceiver = new BroadcastReceiver() {
         public void onReceive(Context context, Intent intent) {
             Toast.makeText(context, "Charger connected!",
                     Toast.LENGTH_SHORT).show();
         }
     };
 
-    BroadcastReceiver chargerDisconnectedReceiver = new BroadcastReceiver() {
+    private BroadcastReceiver chargerDisconnectedReceiver = new BroadcastReceiver() {
         public void onReceive(Context context, Intent intent) {
             Toast.makeText(context, "Charger disconnected!",
                     Toast.LENGTH_SHORT).show();
